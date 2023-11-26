@@ -23,7 +23,7 @@ Hɪ {},
     SEND_FFMPEG_CODE = """
 ❪ HOW TO SET CUSTOM METADATA ❫
 
- ➜ <a herf=https://telegra.ph/How-To-Set-Custom-Metadata-Name-11-26>𝖱𝖾𝖺𝖽 𝖧𝖾𝗋𝖾</a>
+ ➜ <a href=https://telegra.ph/How-To-Set-Custom-Metadata-Name-11-26>𝖱𝖾𝖺𝖽 𝖧𝖾𝗋𝖾</a>
 
 📥 FOR HELP CONT. @Snowball_Official
 """
