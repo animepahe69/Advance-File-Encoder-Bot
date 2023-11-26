@@ -101,7 +101,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         
     elif data == 'setffmpeg':
         ffmpeg_code = await bot.ask(text=Txt.SEND_FFMPEG_CODE , chat_id= query.from_user.id, filters = filters.text, timeout=60, disable_web_page_preview=True)
-        SnowDev = await query.message.reply_text(text="**Setting Your FFMPEG CODE**\n\nPlease Wait...")
+        SnowDev = await query.message.reply_text(text="**𝖯ʟᴇᴀ𝗌ᴇ 𝖡ᴜʏ 𝖯ʀᴏ 𝖯ʟᴀɴ 𝖳ᴏ 𝖠ᴄᴄᴇ𝗌𝗌 𝖳ʜɪ𝗌 𝖥ᴇᴀᴛᴜʀᴇ**")
         
     elif data == 'about':
         BUTN = [
