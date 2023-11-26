@@ -66,8 +66,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'basiccomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = ""
-            await CompressVideo(bot=bot, query=query, ffmpegcode='', c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata author=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:s title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:a title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:v title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata author=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:s title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:a title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺 -metadata:s:v title=@𝖠𝗇𝗂𝗆𝖾_𝖲𝗎𝗉𝖾𝗋𝗇𝗈𝗏𝖺", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -75,8 +75,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'highlycomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = ""
-            await CompressVideo(bot=bot, query=query, ffmpegcode="", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata author=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:s title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:a title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:v title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata author=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:s title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:a title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑 -metadata:s:v title=@𝖲𝖾𝗋𝗂𝖾𝗌_𝖬𝗈𝗏𝗂𝖾𝗌_𝖯𝖺𝗋𝖺𝖽𝗈𝗑", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
