@@ -67,6 +67,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
             ffmpeg = ""
+            await CompressVideo(bot=bot, query=query, ffmpegcode='', c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
