@@ -27,7 +27,7 @@ async def Handle_StartMsg(bot:Client, msg:Message):
     
     else:
         btn = [
-            [InlineKeyboardButton(text='❗ Hᴇʟᴘ', callback_data='help'), InlineKeyboardButton(text='🌨️ Aʙᴏᴜᴛ', callback_data='about')],
+            [InlineKeyboardButton(text='💎 PRO', callback_data='help'), InlineKeyboardButton(text='🌨️ Aʙᴏᴜᴛ', callback_data='about')],
             [InlineKeyboardButton(text='📢 Uᴘᴅᴀᴛᴇs', url='https://t.me/AIORFT'), InlineKeyboardButton(text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
         ]
 
@@ -45,14 +45,14 @@ async def Files_Option(bot:Client, message:Message):
 
     try:
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[InlineKeyboardButton("📝 RENAME 📝", callback_data="rename")],
-                   [InlineKeyboardButton("🗜️ COMPRESS 🗜️", callback_data="compress")]]
+        buttons = [[InlineKeyboardButton("", callback_data="rename")],
+                   [InlineKeyboardButton("📝 𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
         await SnowDev.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     except FloodWait as e:
         await sleep(e.value)
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[InlineKeyboardButton("📝 RENAME 📝", callback_data="rename")],
-                   [InlineKeyboardButton("🗜️ COMPRESS 🗜️", callback_data="compress")]]
+        buttons = [[InlineKeyboardButton("", callback_data="rename")],
+                   [InlineKeyboardButton("📝 𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
         await SnowDev.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     except Exception as e:
         print(e)
