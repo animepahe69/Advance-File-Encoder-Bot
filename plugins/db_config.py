@@ -133,4 +133,4 @@ async def del_ffmpeg(client, message):
 
     SnowDev = await message.reply_text(text="**Please Wait...**", reply_to_message_id=message.id)
     await db.set_ffmpegcode(message.from_user.id, None)
-    await SnowDev.edit("❌ __**𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝖣𝖾𝗅𝖾𝗍𝖾𝖽**__")
+    await SnowDev.edit("✅ __**𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝖣𝖾𝗅𝖾𝗍𝖾𝖽**__")
