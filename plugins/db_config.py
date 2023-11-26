@@ -104,7 +104,7 @@ async def set_ffmpeg(client, message):
         return
         
     await db.set_ffmpegcode(message.from_user.id, ffmpeg.text)
-    await message.reply_text("✅ __**Fғᴍᴘᴇɢ Cᴏᴅᴇ Sᴀᴠᴇᴅ**__", reply_to_message_id=message.id)
+    await message.reply_text("✅ __**𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝖲𝖺𝗏𝖾𝖽**__", reply_to_message_id=message.id)
 
 
 @Client.on_message((filters.group | filters.private) & filters.command(['see_ffmpeg', 'seeffmpeg']))
@@ -119,9 +119,9 @@ async def see_ffmpeg(client, message):
     ffmpeg = await db.get_ffmpegcode(message.from_user.id)
     
     if ffmpeg:
-        await SnowDev.edit(f"✅ <b>Yᴏᴜʀ Cᴜʀʀᴇɴᴛ Fғᴍᴘᴇɢ Cᴏᴅᴇ ɪs :-</b>\n\n<code>{ffmpeg}</code>")
+        await SnowDev.edit(f"✅ <b>𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝗂𝗌 :-</b>\n\n<code>{ffmpeg}</code>")
     else:
-        await SnowDev.edit(f"😔 __**Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aɴy Fғᴍᴘᴇɢ Cᴏᴅᴇ**__")
+        await SnowDev.edit(f"😔 __**𝖸𝗈𝗎 𝖣𝗈𝗇'𝗍 𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝖲𝖾𝗍**__")
 
 
 @Client.on_message((filters.group | filters.private) & filters.command(['del_ffmpeg', 'delffmpeg']))
@@ -133,4 +133,4 @@ async def del_ffmpeg(client, message):
 
     SnowDev = await message.reply_text(text="**Please Wait...**", reply_to_message_id=message.id)
     await db.set_ffmpegcode(message.from_user.id, None)
-    await SnowDev.edit("❌ __**Fғᴍᴘᴇɢ Cᴏᴅᴇ Dᴇʟᴇᴛᴇᴅ**__")
+    await SnowDev.edit("✅ __**𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 𝖣𝖾𝗅𝖾𝗍𝖾𝖽**__")
