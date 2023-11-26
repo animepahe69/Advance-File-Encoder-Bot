@@ -29,7 +29,7 @@ Hɪ {},
     
     HELP_MSG = """
 
-➜ 𝖢𝖮𝖬𝖨𝖭𝖦 𝖲𝖮𝖮𝖭
+➜ <a href=https://telegra.ph/Pro-Features-11-26>𝖥𝖤𝖠𝖳𝖴𝖱𝖤𝖲</a>
 
 <b>⦿ Developer:</b> <a href=https://t.me/Snowball_Official>ѕησωвαℓℓ ❄️</a>
 """
