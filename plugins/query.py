@@ -48,7 +48,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         BTNS = [
         [InlineKeyboardButton(text='𝖢𝖧𝖠𝖭𝖦𝖤 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠', callback_data='basiccomp')],
         [InlineKeyboardButton(text='', callback_data='highlycomp')],
-        [InlineKeyboardButton(text='', callback_data='customcomp')],
+        [InlineKeyboardButton(text='𝖴𝖲𝖤 𝖢𝖴𝖲𝖳𝖮𝖬 𝖵𝖠𝖱𝖨𝖠𝖡𝖫𝖤𝖲', callback_data='customcomp')],
         [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='option')]
     ]
         await query.message.edit(text='**Change your metadata below 👇 **', reply_markup=InlineKeyboardMarkup(BTNS))
@@ -66,8 +66,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'basiccomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata author=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:s title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:a title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:v title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾"
-            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata author=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:s title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:a title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:v title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -75,8 +75,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'highlycomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata author=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:s title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:a title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:v title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾"
-            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata author=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:s title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:a title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾 -metadata:s:v title=𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆:@𝖫𝗈𝗐_𝖬𝖻_𝖹𝗈𝗇𝖾", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -92,14 +92,14 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
             
             else:
                 BUTT = [
-                    [InlineKeyboardButton(text='Sᴇᴛ Fғᴍᴘᴇɢ Cᴏᴅᴇ', callback_data='setffmpeg')],
+                    [InlineKeyboardButton(text='𝖲𝖾𝗍 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺 𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾', callback_data='setffmpeg')],
                     [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='compress')]
                 ]
-                await query.message.edit(text="You Don't Have Any Custom FFMPEG Code. 🛃", reply_markup=InlineKeyboardMarkup(BUTT))
+                await query.message.edit(text="You Don't Have Any Custom Metadata Variables. 🛃", reply_markup=InlineKeyboardMarkup(BUTT))
         except Exception as e:
             print(e)
         
-    elif data == 'setffmpeg':
+    elif data == '':
         ffmpeg_code = await bot.ask(text=Txt.SEND_FFMPEG_CODE , chat_id= query.from_user.id, filters = filters.text, timeout=60, disable_web_page_preview=True)
         SnowDev = await query.message.reply_text(text="**Setting Your FFMPEG CODE**\n\nPlease Wait...")
         await db.set_ffmpegcode(query.from_user.id, ffmpeg_code.text)
