@@ -90,8 +90,8 @@ async def addthumbs(client, message):
     await SnowDev.edit("✅️ __**Tʜᴜᴍʙɴᴀɪʟ Sᴀᴠᴇᴅ**__")
     
 
-@Client.on_message((filters.group | filters.private) & filters.command(['set_ffmpeg', 'setffmpeg']))
-async def set_ffmpeg(client, message):
+@Client.on_message((filters.group | filters.private) & filters.command(['set_metadata', 'setmetadata']))
+async def set_metadata(client, message):
 
     if message.chat.type == enums.ChatType.SUPERGROUP:
         await CANT_CONFIG_GROUP_MSG(client, message)
@@ -103,12 +103,12 @@ async def set_ffmpeg(client, message):
         await bot.send_message(message.from_user.id, "Error!!\n\nRequest timed out.\nRestart by using /set_ffmpeg")
         return
         
-    await db.set_ffmpegcode(message.from_user.id, ffmpeg.text)
-    await message.reply_text("✅ __**Fғᴍᴘᴇɢ Cᴏᴅᴇ Sᴀᴠᴇᴅ**__", reply_to_message_id=message.id)
+    await db.set_metadata(message.from_user.id, ffmpeg.text)
+    await message.reply_text("😔 __**Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ**__", reply_to_message_id=message.id)
 
 
-@Client.on_message((filters.group | filters.private) & filters.command(['see_ffmpeg', 'seeffmpeg']))
-async def see_ffmpeg(client, message):
+@Client.on_message((filters.group | filters.private) & filters.command(['see_metadata', 'seemetadata']))
+async def see_metadata(client, message):
 
     if message.chat.type == enums.ChatType.SUPERGROUP:
         await CANT_CONFIG_GROUP_MSG(client, message)
@@ -116,21 +116,21 @@ async def see_ffmpeg(client, message):
 
     SnowDev = await message.reply_text(text="**Please Wait...**", reply_to_message_id=message.id)
 
-    ffmpeg = await db.get_ffmpegcode(message.from_user.id)
+    ffmpeg = await db.get_metadata(message.from_user.id)
     
     if ffmpeg:
-        await SnowDev.edit(f"✅ <b>Yᴏᴜʀ Cᴜʀʀᴇɴᴛ Fғᴍᴘᴇɢ Cᴏᴅᴇ ɪs :-</b>\n\n<code>{ffmpeg}</code>")
+        await SnowDev.edit(f"😔 <b> Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ")
     else:
-        await SnowDev.edit(f"😔 __**Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aɴy Fғᴍᴘᴇɢ Cᴏᴅᴇ**__")
+        await SnowDev.edit(f"😔 __**Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ**__")
 
 
-@Client.on_message((filters.group | filters.private) & filters.command(['del_ffmpeg', 'delffmpeg']))
-async def del_ffmpeg(client, message):
+@Client.on_message((filters.group | filters.private) & filters.command(['del_metadata', 'delmetadata']))
+async def del_metadata(client, message):
 
     if message.chat.type == enums.ChatType.SUPERGROUP:
         await CANT_CONFIG_GROUP_MSG(client, message)
         return
 
     SnowDev = await message.reply_text(text="**Please Wait...**", reply_to_message_id=message.id)
-    await db.set_ffmpegcode(message.from_user.id, None)
-    await SnowDev.edit("❌ __**Fғᴍᴘᴇɢ Cᴏᴅᴇ Dᴇʟᴇᴛᴇᴅ**__")
+    await db.set_metadata(message.from_user.id, None)
+    await SnowDev.edit("😔 __**Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ**__")
