@@ -59,15 +59,15 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{file.file_name}`\n\n**File Size** :- `{humanize.naturalsize(file.file_size)}`"""
         buttons = [[InlineKeyboardButton("", callback_data="rename")],
-                    [InlineKeyboardButton("📝 𝖲𝖳𝖠𝖱𝖳 𝖤𝖣𝖨𝖳𝖨𝖭𝖦 📝", callback_data="compress")]]
+                    [InlineKeyboardButton("📝 𝖢𝖧𝖠𝖭𝖦𝖤 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
         
         await query.message.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
         
     elif data == 'basiccomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮"
-            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾 -metadata:s:a title=𝖠𝗎𝖽𝗂𝗈 -metadata:s:v title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓'"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾 -metadata:s:a title=𝖠𝗎𝖽𝗂𝗈 -metadata:s:v title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓'", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -75,8 +75,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'highlycomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮"
-            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝖴𝖡𝖳𝖨𝖳𝖫𝖤 -metadata:s:a title=𝖠𝖴𝖣𝖨𝖮 -metadata:s:v title=𝖵𝖨𝖣𝖤𝖮", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾 -metadata:s:a title=𝖠𝗎𝖽𝗂𝗈 -metadata:s:v title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓'"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata author='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓' -metadata:s:s title=𝖲𝗎𝖻𝗍𝗂𝗍𝗅𝖾 -metadata:s:a title=𝖠𝗎𝖽𝗂𝗈 -metadata:s:v title='𝖤𝗇𝖼𝗈𝖽𝖾𝖽 𝖻𝗒 @𝖱𝗈𝗄𝗎𝖻𝗈𝗍𝗓'", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -102,7 +102,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'setffmpeg':
         ffmpeg_code = await bot.ask(text=Txt.SEND_FFMPEG_CODE , chat_id= query.from_user.id, filters = filters.text, timeout=60, disable_web_page_preview=True)
         SnowDev = await query.message.reply_text(text="**𝖯ʟᴇᴀ𝗌ᴇ 𝖡ᴜʏ 𝖯ʀᴏ 𝖯ʟᴀɴ 𝖳ᴏ 𝖠ᴄᴄᴇ𝗌𝗌 𝖳ʜɪ𝗌 𝖥ᴇᴀᴛᴜʀᴇ**")
-        
+
     elif data == 'about':
         BUTN = [
             [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='home')]
