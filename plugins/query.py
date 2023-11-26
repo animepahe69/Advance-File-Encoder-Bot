@@ -46,8 +46,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         
     elif data == 'compress':
         BTNS = [
-        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 1', callback_data='basiccomp')],
-        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 2', callback_data='highlycomp')],
+        [InlineKeyboardButton(text='𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 1', callback_data='basiccomp')],
+        [InlineKeyboardButton(text='𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 2', callback_data='highlycomp')],
         [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖢𝖴𝖲𝖳𝖮𝖬 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠', callback_data='customcomp')],
         [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='option')]
     ]
