@@ -48,7 +48,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         BTNS = [
         [InlineKeyboardButton(text='𝖴𝖲𝖤 𝖵𝖠𝖱𝖨𝖠𝖡𝖫𝖤𝖲 1', callback_data='basiccomp')],
         [InlineKeyboardButton(text='𝖴𝖲𝖤 𝖵𝖠𝖱𝖨𝖠𝖡𝖫𝖤𝖲 2', callback_data='highlycomp')],
-        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖢𝖴𝖲𝖳𝖮𝖬 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠', callback_data='customcomp')],
+        [InlineKeyboardButton(text='𝖴𝖲𝖤 𝖢𝖴𝖲𝖳𝖮𝖬 𝖵𝖠𝖱𝖨𝖠𝖡𝖫𝖤𝖲', callback_data='customcomp')],
         [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='option')]
     ]
         await query.message.edit(text='**Change your metadata below 👇 **', reply_markup=InlineKeyboardMarkup(BTNS))
