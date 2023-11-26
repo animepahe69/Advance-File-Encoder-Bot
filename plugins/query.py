@@ -46,28 +46,28 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         
     elif data == 'compress':
         BTNS = [
-        [InlineKeyboardButton(text='Basic Compression', callback_data='basiccomp')],
-        [InlineKeyboardButton(text='Higly Compression', callback_data='highlycomp')],
-        [InlineKeyboardButton(text='Custom Compression', callback_data='customcomp')],
+        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 1', callback_data='basiccomp')],
+        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 2', callback_data='highlycomp')],
+        [InlineKeyboardButton(text='𝖲𝖤𝖳 𝖢𝖴𝖲𝖳𝖮𝖬 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠', callback_data='customcomp')],
         [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='option')]
     ]
-        await query.message.edit(text='**Select the Compression Method Below 👇 **', reply_markup=InlineKeyboardMarkup(BTNS))
+        await query.message.edit(text='**Change your metadata below 👇 **', reply_markup=InlineKeyboardMarkup(BTNS))
         
     
     elif data == 'option':
         file = getattr(query.message.reply_to_message, query.message.reply_to_message.media.value)
         
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{file.file_name}`\n\n**File Size** :- `{humanize.naturalsize(file.file_size)}`"""
-        buttons = [[InlineKeyboardButton("📝 RENAME 📝", callback_data="rename")],
-                    [InlineKeyboardButton("🗜️ COMPRESS 🗜️", callback_data="compress")]]
+        buttons = [[InlineKeyboardButton("", callback_data="rename")],
+                    [InlineKeyboardButton("📝 𝖲𝖳𝖠𝖱𝖳 𝖤𝖣𝖨𝖳𝖨𝖭𝖦 📝", callback_data="compress")]]
         
         await query.message.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
         
     elif data == 'basiccomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By Snowball (https://github.com/Snowball-0/Advance-File-Encoder-Bot)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"
-            await CompressVideo(bot=bot, query=query, ffmpegcode='-vcodec libx265 -crf 24', c_thumb=c_thumb)
+            ffmpeg = ""
+            await CompressVideo(bot=bot, query=query, ffmpegcode='', c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -75,8 +75,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'highlycomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = "-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"
-            await CompressVideo(bot=bot, query=query, ffmpegcode=ffmpeg, c_thumb=c_thumb)
+            ffmpeg = ""
+            await CompressVideo(bot=bot, query=query, ffmpegcode="", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
