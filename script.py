@@ -3,12 +3,12 @@ class Txt(object):
     PRIVATE_START_MSG = """
 Hɪ {},
 
-I'ᴍ Fɪʟᴇs Eɴᴄᴏᴅᴇʀ ʙᴏᴛ ᴄᴀɴ ᴅᴏ ᴄᴏᴍᴘʀᴇss ʏᴏᴜʀ ғɪʟᴇs ɪɴ ɴᴇɢʟɪɢɪʙʟᴇ ᴡɪᴛʜᴏᴜᴛ ʟᴏss ᴏғ ǫᴜᴀʟɪᴛɪᴇs ᴊᴜsᴛ sᴇɴᴅ ᴍᴇ ᴠɪᴅᴇᴏ
+Hᴇʟʟᴏ ᴛʜᴇʀᴇ! I'ᴍ ᴛʜᴇ Fɪʟᴇ Mᴇᴛᴀᴅᴀᴛᴀ Eᴅɪᴛᴏʀ Bᴏᴛ, ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ᴇᴅɪᴛ ʏᴏᴜʀ ғɪʟᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴇғғᴏʀᴛʟᴇssʟʏ. Wɪᴛʜ ᴍʏ ᴀssɪsᴛᴀɴᴄᴇ, ʏᴏᴜ ᴄᴀɴ ᴇᴀsɪʟʏ ᴜᴘᴅᴀᴛᴇ, ᴍᴏᴅɪғʏ, ᴀɴᴅ ᴏʀɢᴀɴɪᴢᴇ ᴛʜᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴏғ ʏᴏᴜʀ ғɪʟᴇs. Wʜᴇᴛʜᴇʀ ɪᴛ's ᴇᴅɪᴛɪɴɢ ᴅᴏᴄᴜᴍᴇɴᴛ ᴘʀᴏᴘᴇʀᴛɪᴇs, ᴀᴅᴅɪɴɢ ᴛᴀɢs, ᴏʀ ᴍᴀɴᴀɢɪɴɢ ᴀᴜᴛʜᴏʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ, I'ᴍ ʜᴇʀᴇ ᴛᴏ sɪᴍᴘʟɪғʏ ᴛʜᴇ ᴘʀᴏᴄᴇss ғᴏʀ ʏᴏᴜ. Jᴜsᴛ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ғɪʟᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴡᴏʀᴋ ᴡɪᴛʜ, ᴀɴᴅ I'ʟʟ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴇᴅɪᴛɪɴɢ ᴏᴘᴛɪᴏɴs. Lᴇᴛ's ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!
 """
     GROUP_START_MSG = """
 Hɪ {},
 
-I'ᴍ Fɪʟᴇs Eɴᴄᴏᴅᴇʀ ʙᴏᴛ ᴄᴀɴ ᴅᴏ ᴄᴏᴍᴘʀᴇss ʏᴏᴜʀ ғɪʟᴇs ɪɴ ɴᴇɢʟɪɢɪʙʟᴇ ᴡɪᴛʜᴏᴜᴛ ʟᴏss ᴏғ ǫᴜᴀʟɪᴛɪᴇs ᴊᴜsᴛ sᴇɴᴅ ᴍᴇ ᴠɪᴅᴇᴏ
+Hᴇʟʟᴏ ᴛʜᴇʀᴇ! I'ᴍ ᴛʜᴇ Fɪʟᴇ Mᴇᴛᴀᴅᴀᴛᴀ Eᴅɪᴛᴏʀ Bᴏᴛ, ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ᴇᴅɪᴛ ʏᴏᴜʀ ғɪʟᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴇғғᴏʀᴛʟᴇssʟʏ. Wɪᴛʜ ᴍʏ ᴀssɪsᴛᴀɴᴄᴇ, ʏᴏᴜ ᴄᴀɴ ᴇᴀsɪʟʏ ᴜᴘᴅᴀᴛᴇ, ᴍᴏᴅɪғʏ, ᴀɴᴅ ᴏʀɢᴀɴɪᴢᴇ ᴛʜᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴏғ ʏᴏᴜʀ ғɪʟᴇs. Wʜᴇᴛʜᴇʀ ɪᴛ's ᴇᴅɪᴛɪɴɢ ᴅᴏᴄᴜᴍᴇɴᴛ ᴘʀᴏᴘᴇʀᴛɪᴇs, ᴀᴅᴅɪɴɢ ᴛᴀɢs, ᴏʀ ᴍᴀɴᴀɢɪɴɢ ᴀᴜᴛʜᴏʀ ɪɴғᴏʀᴍᴀᴛɪᴏɴ, I'ᴍ ʜᴇʀᴇ ᴛᴏ sɪᴍᴘʟɪғʏ ᴛʜᴇ ᴘʀᴏᴄᴇss ғᴏʀ ʏᴏᴜ. Jᴜsᴛ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ғɪʟᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴡᴏʀᴋ ᴡɪᴛʜ, ᴀɴᴅ I'ʟʟ ɢᴜɪᴅᴇ ʏᴏᴜ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴇᴅɪᴛɪɴɢ ᴏᴘᴛɪᴏɴs. Lᴇᴛ's ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!
 
 ❗**Yᴏᴜ ʜᴀsɴ'ᴛ sᴛᴀʀᴛᴇᴅ ᴍᴇ ʏᴇᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ғɪʀsᴛ sᴛᴀʀᴛ ᴍᴇ sᴏ ɪ ᴄᴀɴ ᴡᴏʀᴋ ғʟᴀᴡʟᴇssʟʏ**
 """
@@ -21,33 +21,16 @@ I'ᴍ Fɪʟᴇs Eɴᴄᴏᴅᴇʀ ʙᴏᴛ ᴄᴀɴ ᴅᴏ ᴄᴏᴍᴘʀᴇss �
 ╰━━━━━━━━━━━━━━━➣ </b>"""
 
     SEND_FFMPEG_CODE = """
-❪ SET CUSTOM FFMPEG CODE ❫
+😔 Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ
 
-Send me the correct ffmpeg code for more info.
-
-Check the <a href=https://unix.stackexchange.com/questions/28803/how-can-i-reduce-a-videos-size-with-ffmpeg#:~:text=ffmpeg%20%2Di%20input.mp4%20%2Dvcodec%20libx265%20%2Dcrf%2028%20output.mp4>𝗗𝗢𝗖</a>.
-
-☛ <b> How to Send ffmpeg Code ? </b>
-<b>➜</b> ffmpeg -i input.mp4 🔺 <code>  -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By Snowball (https://github.com/Snowball-0/Advance-File-Encoder-Bot)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1  </code> 🔺 output.mp4
-
-⚠️ In above code <code> -preset faster -c:v libx265 -s 1280x720 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By Snowball (https://github.com/Snowball-0/Advance-File-Encoder-Bot)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1 </code> this code which contains flags and values of that flags
-
-📥 FOR HELP CONT. @Snowball_Official
+📥 TO BUY CONT. @Snowball_Official
 """
 
     
     HELP_MSG = """
 Available commands:-
 
-➜ /set_ffmpeg - To set custom ffmpeg code
-➜ /set_caption - To set custom caption
-➜ /del_ffmpeg - Delete the custom ffmpeg code
-➜ /del_caption - Delete caption
-➜ /see_ffmpeg - View custom ffmpeg code
-➜ /see_caption - View caption 
-➜ /cancel - To clear all ongoing process 
-➜ To Set Thumbnail just send photo
-
+➜ 𝖢𝖮𝖬𝖨𝖭𝖦 𝖲𝖮𝖮𝖭
 
 <b>⦿ Developer:</b> <a href=https://t.me/Snowball_Official>ѕησωвαℓℓ ❄️</a>
 """
