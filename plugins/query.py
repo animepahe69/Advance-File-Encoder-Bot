@@ -66,8 +66,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'basiccomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = ""
-            await CompressVideo(bot=bot, query=query, ffmpegcode='', c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@Team_Hevc x AnonDK -metadata author=@Team_Hevc x AnonDK -metadata:s:s title=@Team_Hevc x AnonDK -metadata:s:a title=@Team_Hevc x AnonDK -metadata:s:v title=@Team_Hevc x AnonDK"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@Team_Hevc x AnonDK -metadata author=@Team_Hevc x AnonDK -metadata:s:s title=@Team_Hevc x AnonDK -metadata:s:a title=@Team_Hevc x AnonDK -metadata:s:v title=@Team_Hevc x AnonDK", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
@@ -75,8 +75,8 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
     elif data == 'highlycomp':
         try:
             c_thumb = await db.get_thumbnail(query.from_user.id)
-            ffmpeg = ""
-            await CompressVideo(bot=bot, query=query, ffmpegcode="", c_thumb=c_thumb)
+            ffmpeg = "-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@Team_Hevc x AnonDK -metadata author=@Team_Hevc x AnonDK -metadata:s:s title=@Team_Hevc x AnonDK -metadata:s:a title=@Team_Hevc x AnonDK -metadata:s:v title=@Team_Hevc x AnonDK"
+            await CompressVideo(bot=bot, query=query, ffmpegcode="-map 0 -c:s copy -c:a copy -c:v copy -metadata title=@Team_Hevc x AnonDK -metadata author=@Team_Hevc x AnonDK -metadata:s:s title=@Team_Hevc x AnonDK -metadata:s:a title=@Team_Hevc x AnonDK -metadata:s:v title=@Team_Hevc x AnonDK", c_thumb=c_thumb)
             
         except Exception as e:
             print(e)
