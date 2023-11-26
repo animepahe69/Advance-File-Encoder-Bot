@@ -46,13 +46,13 @@ async def Files_Option(bot:Client, message:Message):
     try:
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[InlineKeyboardButton("", callback_data="rename")],
-                   [InlineKeyboardButton("📝 𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
+                   [InlineKeyboardButton("📝 𝖲𝖳𝖠𝖱𝖳 𝖤𝖣𝖨𝖳𝖨𝖭𝖦 📝", callback_data="compress")]]
         await SnowDev.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     except FloodWait as e:
         await sleep(e.value)
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
         buttons = [[InlineKeyboardButton("", callback_data="rename")],
-                   [InlineKeyboardButton("📝 𝖤𝖣𝖨𝖳 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
+                   [InlineKeyboardButton("📝 𝖲𝖳𝖠𝖱𝖳 𝖤𝖣𝖨𝖳𝖨𝖭𝖦 📝", callback_data="compress")]]
         await SnowDev.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     except Exception as e:
         print(e)
