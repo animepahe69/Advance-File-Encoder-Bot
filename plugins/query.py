@@ -59,7 +59,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{file.file_name}`\n\n**File Size** :- `{humanize.naturalsize(file.file_size)}`"""
         buttons = [[InlineKeyboardButton("", callback_data="rename")],
-                    [InlineKeyboardButton("📝 𝖲𝖳𝖠𝖱𝖳 𝖤𝖣𝖨𝖳𝖨𝖭𝖦 📝", callback_data="compress")]]
+                    [InlineKeyboardButton("📝 𝖢𝖧𝖠𝖭𝖦𝖤 𝖬𝖤𝖳𝖠𝖣𝖠𝖳𝖠 📝", callback_data="compress")]]
         
         await query.message.edit(text=text, reply_markup=InlineKeyboardMarkup(buttons))
         
