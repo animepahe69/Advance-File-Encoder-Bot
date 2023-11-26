@@ -99,7 +99,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
         except Exception as e:
             print(e)
         
-    elif data == '':
+    elif data == 'setffmpeg':
         ffmpeg_code = await bot.ask(text=Txt.SEND_FFMPEG_CODE , chat_id= query.from_user.id, filters = filters.text, timeout=60, disable_web_page_preview=True)
         SnowDev = await query.message.reply_text(text="**Setting Your FFMPEG CODE**\n\nPlease Wait...")
         await db.set_ffmpegcode(query.from_user.id, ffmpeg_code.text)
