@@ -119,7 +119,7 @@ async def see_metadata(client, message):
     ffmpeg = await db.get_metadata(message.from_user.id)
     
     if ffmpeg:
-        await SnowDev.edit(f"😔 <b> Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ")
+        await SnowDev.edit(f"😔 __**Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ**__")
     else:
         await SnowDev.edit(f"😔 __**Pʟᴇᴀsᴇ Bᴜʏ Pʀᴏ Pʟᴀɴ Tᴏ Aᴄᴄᴇss Tʜɪs Fᴇᴀᴛᴜʀᴇ**__")
 
