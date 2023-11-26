@@ -95,7 +95,7 @@ async def Cb_Handle(bot:Client, query:CallbackQuery):
                     [InlineKeyboardButton(text='Sᴇᴛ Fғᴍᴘᴇɢ Cᴏᴅᴇ', callback_data='setffmpeg')],
                     [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='compress')]
                 ]
-                await query.message.edit(text="You Don't Have Any Custom FFMPEG Code. 🛃", reply_markup=InlineKeyboardMarkup(BUTT))
+                await query.message.edit(text="You Don't Have Any Custom Metadata Variables. 🛃", reply_markup=InlineKeyboardMarkup(BUTT))
         except Exception as e:
             print(e)
         
