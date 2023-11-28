@@ -151,8 +151,7 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
         ms = await query.message.edit('⚠️__**Please wait...**__\n**Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....**')
 
         try:
-            if os.path.isdir(Download_DIR) and os.path.isdir(Output_DIR):
-            else:
+            if not os.path.isdir(Download_DIR) and os.path.isdir(Output_DIR):
                 os.makedirs(Download_DIR)
                 os.makedirs(Output_DIR)
 
@@ -160,11 +159,10 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
                     message=file,
                     file_name=File_Path,
                     progress=progress_for_pyrogram,
-                    progress_args=("\n⚠️__**Please wait...**__\n\n☃️ **Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time())
+                    progress_args=("\n⚠️Please wait...\n\n☃️ Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time())
                 )
         except Exception as e:
             return await ms.edit(str(e))
-
         await ms.edit(
             "**🗜 Compressing...**",
             reply_markup=InlineKeyboardMarkup([
