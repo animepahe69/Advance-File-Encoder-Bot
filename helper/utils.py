@@ -158,7 +158,7 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
                 os.makedirs(Download_DIR)
                 os.makedirs(Output_DIR)
 
-                dl = await bot.download_media(
+                dl = await bot.download_media(),
                     message=file,
                     file_name=File_Path,
                     progress=progress_for_pyrogram,
