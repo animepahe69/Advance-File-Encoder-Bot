@@ -149,11 +149,6 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
             Output_Path = f"Encode/{query.from_user.id}/{str(file.file_name).split('.')[0]}.mkv"
         
         ms = await query.message.edit('⚠️__**Please wait...**__\n**Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....**')
-
-        try:
-            if os.path.isdir(Download_DIR) and os.path.isdir(Output_DIR):
-                return await ms.edit(
-                    "**Already One Process is Going On! \nPlease Wait Until It's Get Finished 😕!**"
                 )
             else:
                 os.makedirs(Download_DIR)
