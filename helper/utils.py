@@ -152,7 +152,6 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
 
         try:
             if os.path.isdir(Download_DIR) and os.path.isdir(Output_DIR):
-                )
             else:
                 os.makedirs(Download_DIR)
                 os.makedirs(Output_DIR)
