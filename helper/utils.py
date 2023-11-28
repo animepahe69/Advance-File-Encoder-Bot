@@ -164,7 +164,6 @@ async def CompressVideo(bot, query, ffmpegcode, c_thumb):
                     progress=progress_for_pyrogram,
                     progress_args=("\n⚠️__**Please wait...**__\n\n☃️ **Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time())
                 )
-        except Exception as e:
             return await ms.edit(str(e))
 
         await ms.edit(
