@@ -17,7 +17,7 @@ class Config(object):
     DB_NAME  = os.environ.get("DB_NAME","USERDATA") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "6199677027")) # ⚠️ Required
+    ADMIN = int(os.environ.get("ADMIN", "7179837246")) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002197851838')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
 
